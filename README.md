@@ -1,20 +1,37 @@
 # Projeto Hotsite: Petshop "Melhor Amigo"
 
-Este é o arquivo de entrega do projeto de hotsite para o Petshop "Melhor Amigo", conforme solicitado no briefing.
+[cite_start]Hotsite para o Petshop "Melhor Amigo", desenvolvido com Flask, Python e MySQL. [cite_start]O projeto inclui páginas de produtos, galeria de fotos e um formulário de contato funcional. [cite: 13, 14, 15]
 
-## Pré-requisitos
+## Instalação e Execução
 
-Para executar este projeto localmente, é necessário ter os seguintes softwares instalados:
-* Python 3.x
-* MySQL Server
+Existem duas maneiras de obter o projeto: baixando o ZIP ou clonando via Git.
 
-## Instruções de Instalação e Execução
+### Opção 1: Via `git clone` (Recomendado)
+
+1.  Clone este repositório para a sua máquina local:
+    ```bash
+    git clone https://github.com/WillVernen/petshop-melhor-amigo.git
+    ```
+2.  Navegue até a pasta do projeto:
+    ```bash
+    cd petshop-melhor-amigo
+    ```
+3.  Pule para a seção **"Configuração do Ambiente"** abaixo.
+
+### Opção 2: Baixando o .ZIP
+
+1.  Baixe o arquivo `.ZIP` deste repositório.
+2.  Extraia o conteúdo em um local de sua preferência.
+
+---
+
+### Configuração do Ambiente
 
 Siga os passos abaixo para configurar e rodar o projeto.
 
-### 1. Configuração do Banco de Dados
+#### 1. Banco de Dados
 
-- Abra seu cliente MySQL e execute os seguintes comandos para criar o banco de dados e a tabela necessários:
+- Abra seu cliente MySQL e execute os seguintes comandos:
 
 ```sql
 CREATE DATABASE petshop_db;
@@ -32,35 +49,35 @@ CREATE TABLE contatos (
 );
 ```
 
-### 2. Configuração da Aplicação
+#### 2. Aplicação
 
-1.  **Extraia o arquivo .ZIP** em um local de sua preferência.
-2.  **Abra a pasta do projeto** em um terminal ou prompt de comando.
-3.  **Crie um ambiente virtual** (recomendado):
+1.  **Crie um ambiente virtual** (recomendado):
     ```bash
     python -m venv venv
     ```
-4.  **Ative o ambiente virtual:**
+2.  **Ative o ambiente virtual:**
     -   **Windows:** `venv\Scripts\activate`
     -   **macOS/Linux:** `source venv/bin/activate`
-5.  **Instale as dependências** do projeto com o seguinte comando:
+3.  **Instale as dependências** do projeto:
     ```bash
     pip install -r requirements.txt
     ```
-6.  **Configure a conexão com o banco de dados:**
-    -   Abra o arquivo `app.py`.
-    -   Localize e altere as seguintes linhas com suas credenciais do MySQL:
-        ```python
-        app.config['MYSQL_USER'] = 'seu_usuario_mysql'
-        app.config['MYSQL_PASSWORD'] = 'sua_senha_mysql'
-        ```
+4.  **Configure a conexão com o banco de dados** no arquivo `app.py`:
+    ```python
+    app.config['MYSQL_USER'] = 'seu_usuario_mysql'
+    app.config['MYSQL_PASSWORD'] = 'sua_senha_mysql'
+    ```
 
-### 3. Executando o Servidor
+#### 3. Executando o Servidor
 
 - Com tudo configurado, execute o seguinte comando no terminal:
   ```bash
   python app.py
   ```
-- Abra seu navegador e acesse a URL: **http://127.0.0.1:5000**
+- Abra seu navegador e acesse: **http://127.0.0.1:5000**
 
-O site estará no ar e totalmente funcional.
+---
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.

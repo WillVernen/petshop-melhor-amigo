@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos - Petshop Melhor Amigo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Petshop Melhor Amigo</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos e Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <h1>Nossos Amigos Felizes</h1>
+                <p>O reflexo do nosso amor e cuidado pelos animais.</p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Galeria de Clientes</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="{{ url_for('static', filename='images/pet1.jpg') }}" alt="Cão feliz após o banho">
+                        <div class="gallery-caption">
+                            <h3>Bolinha</h3>
+                            <p>Pronto para o fim de semana!</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ url_for('static', filename='images/pet2.jpg') }}" alt="Gato relaxado">
+                        <div class="gallery-caption">
+                            <h3>Mimi</h3>
+                            <p>Curtindo um dia de spa.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ url_for('static', filename='images/pet3.jpg') }}" alt="Cão com tosa nova">
+                        <div class="gallery-caption">
+                            <h3>Thor</h3>
+                            <p>De visual novo.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ url_for('static', filename='images/pet4.jpg') }}" alt="Filhote de cachorro">
+                        <div class="gallery-caption">
+                            <h3>Luna</h3>
+                            <p>Primeiro banho.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ url_for('static', filename='images/pet5.jpg') }}" alt="Cão de pelo longo">
+                        <div class="gallery-caption">
+                            <h3>Max</h3>
+                            <p>Pelo macio e brilhante.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="{{ url_for('static', filename='images/pet6.jpg') }}" alt="Dois cães brincando">
+                        <div class="gallery-caption">
+                            <h3>Tico e Teco</h3>
+                            <p>Amigos para sempre.</p>
+                        </div>
+                    </div>
+                     </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Petshop Melhor Amigo. Todos os direitos reservados.</p>
+            <p>Contato: (XX) XXXX-XXXX | email@melhoramigo.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>

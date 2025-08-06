@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos e Serviços - Petshop Melhor Amigo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Petshop Melhor Amigo</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos e Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <h1>Nossos Produtos e Serviços</h1>
+                <p>Tudo o que seu melhor amigo precisa para uma vida feliz e saudável.</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title">Cuidados e Bem-estar</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="{{ url_for('static', filename='images/banho-relaxante.jpg') }}" alt="Cão recebendo um banho relaxante">
+                        <div class="product-info">
+                            <h3>Banho Relaxante</h3>
+                            <p>Utilizamos produtos de qualidade, seguros e adequados para cada tipo de pelagem, garantindo uma limpeza profunda e refrescante.</p>
+                            <a href="contato.html" class="product-button">Solicitar Informações</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="{{ url_for('static', filename='images/tosa-especializada.jpg') }}" alt="Cão com tosa profissional">
+                        <div class="product-info">
+                            <h3>Serviço de Tosa Especializada</h3>
+                            <p>Nossos tosadores experientes utilizam técnicas avançadas para garantir um visual impecável, incluindo limpeza de ouvidos e corte de unhas.</p>
+                            <a href="contato.html" class="product-button">Solicitar Informações</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section alternate-bg">
+            <div class="container">
+                <h2 class="section-title">Alimentação</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="{{ url_for('static', filename='images/racao-premium.jpg') }}" alt="Sacos de ração premium">
+                        <div class="product-info">
+                            <h3>Ração Premium</h3>
+                            <p>Seleção de rações premium para cães e gatos, formuladas com ingredientes de alta qualidade para uma nutrição balanceada.</p>
+                            <a href="contato.html" class="product-button">Ver Opções</a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+        
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title">Acessórios e Higiene</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="{{ url_for('static', filename='images/brinquedos.jpg') }}" alt="Brinquedos interativos para pets">
+                        <div class="product-info">
+                            <h3>Brinquedos Interativos</h3>
+                            <p>Estimulam a mente e o corpo do seu pet, promovendo exercício físico e mental para horas de diversão saudável.</p>
+                            <a href="contato.html" class="product-button">Ver Opções</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="{{ url_for('static', filename='images/higiene.jpg') }}" alt="Produtos de higiene para pets">
+                        <div class="product-info">
+                            <h3>Produtos de Higiene e Cuidados</h3>
+                            <p>Shampoos, condicionadores, escovas e outros acessórios essenciais para manter seu pet limpo e confortável.</p>
+                            <a href="contato.html" class="product-button">Ver Opções</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Petshop Melhor Amigo. Todos os direitos reservados.</p>
+            <p>Contato: (XX) XXXX-XXXX | email@melhoramigo.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
